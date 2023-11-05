@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  /* Colors */
+  --Light-Cyan-clr: hsl(193, 38%, 86%);
+  --Neon-Green-clr: hsl(150, 100%, 66%);
+  --Grayish-Blue-clr: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue-clr: hsl(217, 19%, 24%);
+  --Dark-Blue-clr: hsl(218, 23%, 16%);
+
+  /* Font */
+  --main-font: "Manrope", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Dark-Blue-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Main */
+.main {
+  margin-inline: 2rem;
+}
+
+.container {
+  background: var(--Dark-Grayish-Blue-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  text-align: center;
+  padding: 1.75rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.advice-num {
+  font-size: 14px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  color: var(--Neon-Green-clr);
+}
+
+.advice-text {
+  font-family: var(--main-font);
+  font-weight: 800;
+  color: var(--Light-Cyan-clr);
+}
+
+.line-img-mobile,
+.line-img-desktop {
+  padding-bottom: 4rem;
+}
+
+.line-img-mobile {
+  display: block;
+}
+
+.line-img-desktop {
+  display: none;
+}
+
+.advice-btn {
+  position: absolute;
+  bottom: -10%;
+  outline: none;
+  border: none;
+  background: var(--Neon-Green-clr);
+  border-radius: 50%;
+  padding: 1.25rem;
+  cursor: pointer;
+}
+
+.advice-btn:active {
+  box-shadow: 0 5px 10px 10px hsla(140, 64%, 43%, 0.5);
+}
+
+/* Footer */
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(182, 100%, 87%);
+}
+
+/* Breakpoints */
+@media screen and (min-width: 748px) {
+  .main {
+    margin-inline: 6rem;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .main {
+    margin-inline: 8rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .main {
+    margin-inline: 12rem;
+  }
+
+  .line-img-mobile {
+    display: none;
+  }
+
+  .line-img-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .main {
+    margin-inline: 20rem;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .main {
+    margin-inline: 24rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .main {
+    margin-inline: 28.0625rem;
+  }
+}
